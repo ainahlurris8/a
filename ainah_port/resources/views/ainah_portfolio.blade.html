@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ainah Fernando Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+    
+    body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:
+    radial-gradient(circle at 30% 40%, rgba(83, 245, 139, 0.55), transparent 60%),
+    radial-gradient(circle at 70% 60%, rgba(122, 71, 228, 0.45), transparent 65%),
+    radial-gradient(circle at 50% 80%, rgba(52, 168, 235, 0.35), transparent 65%),
+    #0A0A1A;
+
+
+
+    color: white;
+}
+
+        /* -------- NAVIGATION BAR -------- */
+        nav {
+            width: 100%;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between; /* left menu + right logo */
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Navigation Links Left */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffdddd;
+            font-size: 18px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            text-shadow: 0 0 10px white;
+        }
+
+        /* Logo Right */
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* -------- LANDING PAGE SECTION -------- */
+        .container {
+            max-width: 1200px;
+            margin: 70px auto;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            color: white;
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+
+        .intro-text h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            color: #000000;
+            text-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+
+        .intro-text p {
+            font-size: 22px;
+            line-height: 1.6;
+            color: #f5f5f5;
+        }
+
+        .intro-image img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 0 15px black;
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .intro-image img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- LOGO ON THE RIGHT -->
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x50?text=Your+Logo" alt="Logo">
+        </div>
+    </nav>
+
+    <!-- LANDING PAGE INTRODUCTION -->
+    <div class="container" id="home">
+        <div class="intro-text">
+            <h1>Hello, I'm Ainah Fernando</h1>
+            <p>
+                Welcome to my digital portfolio!  
+                I am a passionate creator dedicated to turning ideas into impactful digital experiences.  
+                Here, you'll find my projects, skills, and the journey I’ve taken in the world of design and development.  
+                Explore my work and get to know the creativity behind each piece—I’m excited to share my story with you.
+            </p>
+        </div>
+
+        <div class="intro-image">
+            <!-- Replace with your own picture -->
+            <img src="https://via.placeholder.com/350" alt="Ainah Photo">
+        </div>
+    </div>
+
+</body>
+</html>
